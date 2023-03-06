@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation Example</title>
+	<style type="text/css">
+		div{
+			position: relative;
+			width: 200px;height: 200px;
+			background-color: indianred;
+			animation-name: colors;
+			animation-duration: 0.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: forward;
+		}
+		@keyframes colors{
+            0%{background-color: red; left: 0px;top: 0px;}
+            20%{background-color: orange; left: 0px;top: 200px;}
+            40%{background-color: yellow; left: 500px;top: 200px;}
+            60%{background-color: green; left: 1100px;top: 200px;}
+            80%{background-color: blue; left: 1100px;top: 0px;}
+            100%{background-color: purple; left: 0px;top: 0px;}
+		}
+	</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
